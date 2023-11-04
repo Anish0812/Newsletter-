@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>News App by D070_ANISH_DATTA_MEGHE </title>
+        <style>
+            *{font-size:50px;}
+            body{background-color:violet}
+            .nav{background-color:black}
+            .nav a{color:white;text-decoration:None;margin:5%;}
+            h2{border-style:solid;width:50%;border-radius:40px;}
+        </style>
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head> 
+    <body>
+      <center>
+        <div class="nav">
+            <a href="{% url 'home' %}">News </a>
+            <a href="{% url 'about' %}">About </a>
+
+        </div>
+        {% block content %}
+        {% endblock %}
+      </center>
+    </body>
+    </html>
